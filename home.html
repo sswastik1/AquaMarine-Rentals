@@ -1,0 +1,608 @@
+<html lang="en">
+   <head>
+      <title>Boat Rental</title>
+      <meta charset="utf-8">
+        <meta name="description" content="Calgary, fun, enjoy, amazing, boat party, renting, lakes, ponds, beaches, sand,Home">
+        <meta name="keywords" content="Aqua Marine, Aquamarine, rentals, boat rental, edmonton, sylvan lake, wabamun lake, summer, watersport, seadoo, boats,Home">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Dancing+Script:400,700|Muli:300,400" rel="stylesheet">
+      <link rel="stylesheet" href="css/all.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <!-- slick CSS -->
+      <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+      <!-- Add icon library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0" data-new-gr-c-s-check-loaded="14.1049.0" data-gr-ext-installed="">
+      <div class="site-wrap">
+            <header>
+               <div class="container">
+                  <nav class="navbar navbar-expand-lg bg-transparent">
+                     <a class="navbar-brand" href="home.html"> <img src="img/logo.png" class="img-fluid" alt="Logo"> </a>
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon fa fa-bars"></span>
+                     </button>
+                     <div class="collapse navbar-collapse justify-content-end phone_bgwhite" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                           <a class="nav-item nav-link active" href="home.html">Home <span class="sr-only">(current)</span></a>
+                           <!-- Example single danger button -->
+                           <div class="btn-group">
+                              <button type="button" class="nav-item nav-link dropdown-toggle bg-transparent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 Our Boats
+                              </button>
+                              <div class="dropdown-menu">
+                              <a class="dropdown-item" href="boat_1.html">2016 Four Winns Freedom 190</a>
+                              <a class="dropdown-item" href="boat_2.html">Sea Doo Wake Pro</a>
+                              <a class="dropdown-item" href="boat_3.html">2021 Princecraft Vectra</a>
+                              </div>
+                           </div>
+                           <a class="nav-item nav-link" href="rental_policy.html">Rental Policy</a>
+                           <a class="nav-item nav-link" href="contact.html">Contact Us</a>
+                           <a type="button" class="nav-item nav-linkbtn btn-white py-3 px-4 ml-4" data-toggle="modal" data-target="#booknow_form">Book Now</a>
+                        </div>
+                     </div>
+                  </nav>
+               </div>
+            </header>
+
+         <!-- Modal -->
+         <div class="modal fade" id="booknow_form" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="modal-header d-block">
+                  <h3 class="heading-92913 text-dark mb-0">Book Now</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div class="row mx-0">
+                     <div class="col-md-12 mx-auto px-0 bg-white">
+                       <div class="site-section booking_area bg-white contact_us py-5" style="background-image: unset;padding-bottom: 0px !important;" data-aos="fade-right">
+                              <div class="row mx-0">
+                                 <div class="col-md-12 mx-auto">
+                               <form method="Post" action="contactMail.php" class="row">
+                                    <div class="form-group col-md-6">
+                                       <label for="input-1">Full Name:</label>
+                                       <input type="text" name="name" class="form-control" id="input-1" required  pattern="[a-zA-Z ]+">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                       <label for="input-6">Email Address</label>
+                                       <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  class="form-control" id="input-6" name="email" required="true">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                       <label for="input-7">Phone Number</label>
+                                       <input type="text"  pattern="[0-9]{8,12}+" class="form-control" id="input-7" name="phone" required="true">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="input-5">Yacht You're Interested in:</label>
+                                        <select name="type" id="input-5" class="form-control" required="true">
+                                           <option value="">2016 Four Winns Freedom 190</option>
+                                           <option value="">Sea Doo Wake Pro</option>
+                                           <option value="">2021 Princecraft Vectra</option>
+
+                                        </select>
+                                     </div>
+                                    <div class="form-group col-md-12">
+                                       <label for="input-8">Other Info</label>
+                                       <textarea name="description" id="input-8" cols="30" rows="5" class="form-control"></textarea>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                       <input type="submit" class="btn btn-primary py-3 px-5" value="Submit">
+                                    </div>
+                                 </form>
+                                 </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            </div>
+         </div>
+
+         <div class="position-relative px-0">
+         <div class="video-wrapper position-absolute" style="top: 0;width: 100%;left: 0;">
+            <video autoplay muted loop playsinline preload="metadata">
+                <source src="img/Mykonos_4.mp4" type="video/mp4">
+            </video>
+         </div>
+        <div id="banner" class="d-flex flex-wrap align-items-center position-relative multiple-items">
+                <div class="slide_main">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="inner text-center w-lg-50 text-white">
+                                    <h1><b>“Life is better on water with wind on your face” </b></h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide_main">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="inner text-center w-lg-50 text-white">
+                                    <h1><b>“BOAT FAST, LIVE SLOW”</b></h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide_main">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="inner text-center w-lg-50 text-white">
+                                    <h1><b>“I wanted happiness, open air, and freedom. I found it on the boat.” </b></h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+         
+        <div class="site-section bg-light bg-white our_destination">
+         <div class="container">
+            <div class="row justify-content-center mb-5">
+               <div class="col-md-7 text-center">
+                  <span class="text-serif text-primary">Crafts</span>
+                  <h3 class="heading-92913 text-black text-center">Our Crafts</h3>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-right">
+                  <div class="service-39381">
+                     <img src="img/boat_1/4b.jpg" alt="Image" class="img-fluid">
+                     <div class="p-4">
+                        <h3><span class="icon-room mr-1 text-primary"></span>Four Winns Freedom 190</h3>
+                        <div class="info_detail">
+                           <p>The perfect family runabout in a spacious 19’ boat. From the full width sun-pad to the to the fully finished ski locker, this boat is ready to hit the water. So gear up your group with this master piece to hit the waters of Alberta. Comes with a lot of storage space. Boat is really spacious and can make your trip rememberable.
+                           </p>
+                           <a href="boat_1.html" class="btn btn-primary py-2 px-3">More info</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-down">
+                  <div class="service-39381">
+                     <img src="img/boat_1/b5.jpeg" alt="Image" class="img-fluid">
+                     <div class="p-4">
+                        <h3><span class="icon-room mr-1 text-primary"></span> Sea Doo Wake Pro</h3>
+                        <div class="info_detail">
+                           <p>Designed to give you the best possible tow sports experience. With the largest engine in the Sea-Doo Tow Sport watercraft lineup, plus our exclusive S3 Hull for added stability when towing wakeskaters and wakeboarders. 
+                           </p>
+                           <a href="boat_2.html" class="btn btn-primary py-2 px-3">More info</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-left">
+                  <div class="service-39381">
+                     <img src="img/boat_1/third_replace.png" alt="Image" class="img-fluid">
+                     <div class="p-4">
+                        <h3><span class="icon-room mr-1 text-primary"></span>Princecraft Vectra</h3>
+                        <div class="info_detail">
+                         <p>Accommodate up to 10 people. Built for your fishing as well as your leisure needs, this pontoon has it all. Get ready for 2022 summer with this amazing pontoon.
+                        </p>
+                        <a href="boat_3.html" class="btn btn-primary py-2 px-3">More info</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+         <div class="py-5 bg-white">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6 col-lg-4" data-aos="fade-right"
+                     data-aos-offset="300"
+                     data-aos-easing="ease-in-sine">
+                     <div class="service-29283">
+                        <span class="wrap-icon-39293">
+                        <img src="img/luxry.png" alt="Luxuries">
+                        </span>
+                        <h3>Spotless & Sanitized Craft</h3>
+                        <p>On each rent out you are assured to get a clean, sanitized and fully vacuumed craft just waiting of you to ride it.</p>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4" data-aos="fade-down"
+                     data-aos-offset="300"
+                     data-aos-easing="ease-in-sine">
+                     <div class="service-29283">
+                        <span class="wrap-icon-39293">
+                        <img src="img/luxry.png" alt="Luxuries">
+                        </span>
+                        <h3>Customer Satisfaction</h3>
+                        <p>Satisfying the customer with the services we provide has always remained our priority and try to do our best for the same.</p>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4" data-aos="fade-left"
+                     data-aos-offset="300"
+                     data-aos-easing="ease-in-sine">
+                     <div class="service-29283">
+                        <span class="wrap-icon-39293">
+                        <img src="img/luxry.png" alt="Luxuries">
+                        </span>
+                        <h3>Easy Procedure</h3>
+                        <p>Our company has a really easy process to rent out a craft which comes out to be an ideal one.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="site-section bg-image overlay bg-white" style="background-image:url(./img/banner.jpg)">
+            <div class="container">
+               <div class="row">
+                <div class="col">
+                    <h2 style="text-align:center;color:#fff;">
+                       <i>“Alberta has always been the Hub of Lakes; so why not discover some this season.” </i>
+                    </h2>
+                 </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="site-section bg-white">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-8 flex-wrap d-flex align-items-center"  data-aos="fade-right">
+                     <div>
+                     <span class="text-serif text-primary">About Us</span>
+                     <h3 class="heading-92913 text-black">Welcome To Our Website</h3>
+                     <p>AquaMarine Rentals is an Edmonton-based locally owned company. We have a bunch of crafts to choose from; rent out and make your day a rememberable one. Customer can rent our watercrafts and tow it anywhere they want to boat. Most of our crafts come with water sports prompts to help you enjoy more on the waves of the waters. </p>
+                     <!-- <p><a href="#" class="btn btn-primary py-3 px-4">Learn More</a></p> -->
+                  </div>
+                  </div>
+                  <div class="col-md-4" data-aos="fade-left">
+                     <img src="img/banner.jpg" alt="Image" class="img-fluid">
+                  </div>
+               </div>
+            </div>
+        </div>
+
+
+         <div class="site-section booking_area bg-white">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-8 mx-auto">
+                     <span class="text-serif text-white">Book Now</span>
+                     <h3 class="heading-92913 text-white">Book A Craft</h3>
+                     <form method="Post" action="contactMail.php" class="row">
+                        <div class="form-group col-md-6">
+                           <label for="input-1">Full Name:</label>
+                           <input type="text" class="form-control" id="input-1"  name="name" required  pattern="[a-zA-Z ]+">
+                        </div>
+                        <!-- <div class="form-group col-md-6">
+                           <label for="input-2">Number of People:</label>
+                           <input type="text" class="form-control" id="input-2">
+                        </div>
+                        <div class="form-group col-md-6">
+                           <label for="input-3">Date From:</label>
+                           <input type="text" class="form-control datepicker" id="input-3">
+                        </div>
+                        <div class="form-group col-md-6">
+                           <label for="input-4">Date To:</label>
+                           <input type="text" class="form-control datepicker" id="input-4">
+                        </div> -->
+                        <div class="form-group col-md-6">
+                           <label for="input-5">Yacht You're Interested in:</label>
+                           <!-- <select name="" id="input-5" class="form-control">
+                              <option value="">Motor Craft</option>
+                              <option value="">Hi-Speed Craft</option>
+                              <option value="">Premium Craft</option>
+                              <option value="">Presidential Craft</option>
+                           </select> -->
+                                <select name="type" id="input-5" class="form-control" required="true">
+                                         <option value="">2016 Four Winns Freedom 190</option>
+                                           <option value="">Sea Doo Wake Pro</option>
+                                           <option value="">2021 Princecraft Vectra</option>
+
+                                        </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                           <label for="input-6">Email Address</label>
+                           <input  id="input-6" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  class="form-control" id="input-6" name="email" required="true">
+                        </div>
+                        <div class="form-group col-md-6">
+                           <label for="input-7">Phone Number</label>
+                           <input type="text" class="form-control" id="input-7"   pattern="[0-9]{8,12}+"  id="input-7" name="phone" required="true">
+                        </div>
+                        <div class="form-group col-md-12">
+                           <label for="input-8">Notes</label>
+                           <textarea name="description" id="input-8" cols="30" rows="5" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group col-md-12">
+                           <input type="submit" class="btn btn-primary-blue py-3 px-5" value="Book Now">
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- <div class="site-section bg-white">
+            <div class="container">
+               <div class="row justify-content-center mb-5">
+                  <div class="col-md-7 text-center">
+                     <span class="text-serif text-primary">Team</span>
+                     <h3 class="heading-92913 text-black text-center">Our Team</h3>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-3 col-md-6 mb-lg-0 col-sm-6">
+                     <div class="person">
+                        <figure>
+                           <img src="img/team.jpg" alt="Image" class="img-fluid">
+                           <div class="social">
+                              <a href="#"><span class="fa fa-facebook"></span></a>
+                              <a href="#"><span class="fa fa-twitter"></span></a>
+                              <a href="#"><span class="fa fa-linkedin"></span></a>
+                           </div>
+                        </figure>
+                        <div class="person-contents">
+                           <h3>Craig Daniel</h3>
+                           <span class="position">Engineer</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-lg-0 col-sm-6">
+                     <div class="person">
+                        <figure>
+                           <img src="img/team.jpg" alt="Image" class="img-fluid">
+                           <div class="social">
+                              <a href="#"><span class="fa fa-facebook"></span></a>
+                              <a href="#"><span class="fa fa-twitter"></span></a>
+                              <a href="#"><span class="fa fa-linkedin"></span></a>
+                           </div>
+                        </figure>
+                        <div class="person-contents">
+                           <h3>Craig Daniel</h3>
+                           <span class="position">Engineer</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-lg-0 col-sm-6">
+                     <div class="person">
+                        <figure>
+                           <img src="img/team.jpg" alt="Image" class="img-fluid">
+                           <div class="social">
+                              <a href="#"><span class="fa fa-facebook"></span></a>
+                              <a href="#"><span class="fa fa-twitter"></span></a>
+                              <a href="#"><span class="fa fa-linkedin"></span></a>
+                           </div>
+                        </figure>
+                        <div class="person-contents">
+                           <h3>Craig Daniel</h3>
+                           <span class="position">Engineer</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-lg-0 col-sm-6">
+                     <div class="person">
+                        <figure>
+                           <img src="img/team.jpg" alt="Image" class="img-fluid">
+                           <div class="social">
+                              <a href="#"><span class="fa fa-facebook"></span></a>
+                              <a href="#"><span class="fa fa-twitter"></span></a>
+                              <a href="#"><span class="fa fa-linkedin"></span></a>
+                           </div>
+                        </figure>
+                        <div class="person-contents">
+                           <h3>Craig Daniel</h3>
+                           <span class="position">Engineer</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div> -->
+        <div class="site-section pb-0 bg-white testimonials">
+            <div class="container">
+               <div class="row justify-content-center mb-5">
+                  <div class="col-md-7 text-center">
+                     <span class="text-serif text-primary">Testimonial</span>
+                     <h3 class="heading-92913 text-black text-center">What Customer Saying...</h3>
+                  </div>
+               </div>
+               <div class="slide_me responsive">
+                    <div class="row">
+                        <div class="mb-4 mb-lg-0 col-md-12">
+                            <div class="testimony-39291">
+                            <blockquote>
+                                <p>Undoubtedly the best boat experience I’ve ever had! Me and my friends really enjoy boating and came across this amazing company! So happy to choose you! My experience was phenomenal, and the website made it so easy for me and my friends to choose the right boat for us! </p>
+                            </blockquote>
+                            <div class="d-flex vcard align-items-center">
+                                <!-- <div class="pic mr-3">
+                                    <img src="img/team.jpg" alt="Image" class="img-fluid">
+                                </div> -->
+                                <div class="text">
+                                    <strong class="d-block">Snigdha Widge</strong>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-4 mb-lg-0 col-md-12">
+                            <div class="testimony-39291">
+                            <blockquote>
+                                <p>It was very fun, enjoyed a lot. The boat is very good and my family had a lot of fun. Thank you for providing us with the best rental boat. Looking forward to rent a boat this summer again!!</p>
+                            </blockquote>
+                            <div class="d-flex vcard align-items-center">
+                                <!-- <div class="pic mr-3">
+                                    <img src="img/team.jpg" alt="Image" class="img-fluid">
+                                </div> -->
+                                <div class="text">
+                                    <strong class="d-block">Xiaoya Chen</strong>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-4 mb-lg-0 col-md-12">
+                            <div class="testimony-39291">
+                            <blockquote>
+                                <p>These guys have an amazing team; who actually have the experience to help you guide better in the selection of your boat. By providing commendable service, they make our minds to consider them at first place always.</p>
+                            </blockquote>
+                            <div class="d-flex vcard align-items-center">
+                                <!-- <div class="pic mr-3">
+                                    <img src="img/team.jpg" alt="Image" class="img-fluid">
+                                </div> -->
+                                <div class="text">
+                                    <strong class="d-block">Amy McKimmon</strong>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-4 mb-lg-0 col-md-12">
+                            <div class="testimony-39291">
+                            <blockquote>
+                                <p>Loved it!! The guy at the front desk is humble and gives you best customer service. Thanks Aquamarine for making my day an unforgettable one.</p>
+                            </blockquote>
+                            <div class="d-flex vcard align-items-center">
+                                <!-- <div class="pic mr-3">
+                                    <img src="img/team.jpg" alt="Image" class="img-fluid">
+                                </div> -->
+                                <div class="text">
+                                    <strong class="d-block">Patricia White</strong>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+        </div>
+         <div class="site-section bg-image overlay bg-white" style="background-image:url(img/banner.jpg)">
+            <div class="container">
+               <div class="row justify-content-center">
+                  <div class="col-md-7 text-center">
+                     <h2 class="text-white">Get In Touch With Us</h2>
+                     <p class="mb-0"><a href="contact.html" class="btn btn-primary-blue py-3 px-5 text-white">Contact Us</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer bg-light ">
+            <div class="container">
+               <!-- <div class="row">
+                  <div class="col-lg-3">
+                     <h2>Logo Here</h2> 
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo minima qui dolor, iusto iure.</p>
+                  </div>
+                  <div class="col-lg-3">
+                     <h3 class="footer-heading"><span>Our Company</span></h3>
+                     <ul class="list-unstyled">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Projects</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-lg-3">
+                     <h3 class="footer-heading"><span>Our Services</span></h3>
+                     <ul class="list-unstyled">
+                        <li><a href="#">Industrial</a></li>
+                        <li><a href="#">Construction</a></li>
+                        <li><a href="#">Remodeling</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-lg-3">
+                     <h3 class="footer-heading"><span>Contact</span></h3>
+                     <ul class="list-unstyled">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Support Community</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Our Partners</a></li>
+                     </ul>
+                  </div>
+               </div> -->
+               <div class="row">
+                  <div class="col-12">
+                     <div class="copyright">
+                        <p>
+                           Copyright ©2022 All rights reserved
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <ul class="social_icons">
+         <li><a target="_blank" href="https://www.facebook.com/AquaMarine-Rentals-101177769200318/"><i class="fa fa-facebook-f"></i></a></li>
+         <li><a target="_blank" href="https://instagram.com/aquamarine_rentals?utm_medium=copy_link"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+         AOS.init();
+      </script>
+      <script type="text/javascript" src="js/slick.min.js"></script>
+      <script type="text/javascript">
+         $('.responsive').slick({
+         dots: false,
+         infinite: true,
+         autoplay: true,
+         speed: 300,
+         slidesToShow: 3,
+         slidesToScroll: 1,
+         responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+         });
+      </script>
+      <script>
+          $('.multiple-items').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            speed: 500,
+            dots: true
+            });
+      </script>
+   </body>
+</html>
